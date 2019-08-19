@@ -19,7 +19,7 @@ public class BaseClass {
 		try{
 			prop = new Properties();
 			FileInputStream ip;
-			ip = new FileInputStream("C:\\Users\\nandigam.kumar\\workspace\\MercuryTours\\src\\main\\java\\com\\mercury\\qa\\config\\config.properties");
+			ip = new FileInputStream("C:\\Users\\nandigam.kumar\\git\\MercuryTours\\MercuryTours\\src\\main\\java\\com\\mercury\\qa\\config\\config.properties");
 			prop.load(ip);
 		}
 		catch(Exception e){
@@ -30,6 +30,10 @@ public class BaseClass {
 	
 	public static void initialisation(){
 		String browser = prop.getProperty("browser");
+//		System.out.println("Browser: "+browser);
+//		System.out.println("URL: "+prop.getProperty("url"));
+//		System.out.println("URL: "+prop.getProperty("username"));
+//		System.out.println("URL: "+prop.getProperty("password"));
 		if(browser.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
 			driver = new ChromeDriver();	

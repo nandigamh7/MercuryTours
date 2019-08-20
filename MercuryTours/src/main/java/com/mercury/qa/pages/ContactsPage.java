@@ -8,7 +8,7 @@ import com.mercury.qa.base.BaseClass;
 
 public class ContactsPage extends BaseClass{
 
-	@FindBy(xpath = "//div[contains(text(), 'Contacts')]")
+	@FindBy(xpath = "//div[@class='ui header item mb5 light-black' and text() = 'Contacts']")
 	WebElement contactLabel;
 	
 	public ContactsPage(){

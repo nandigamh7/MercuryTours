@@ -37,7 +37,7 @@ public class LoginPage extends BaseClass{
 	
 	public HomePage login(String un, String pwd) throws Exception{
 
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		loginLink.click();
 		username.sendKeys(un);
 		password.sendKeys(pwd);

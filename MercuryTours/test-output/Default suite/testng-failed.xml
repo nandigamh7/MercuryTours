@@ -5,7 +5,6 @@
     <classes>
       <class name="com.mercury.testcases.ContactsPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="verifyContactsPageLabel"/>
           <include name="setUp"/>
         </methods>

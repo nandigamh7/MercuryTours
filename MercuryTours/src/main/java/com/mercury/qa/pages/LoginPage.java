@@ -1,7 +1,9 @@
 package com.mercury.qa.pages;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.mercury.qa.base.BaseClass;
 
 public class LoginPage extends BaseClass{
-
+	
 	//Page Factory or Object Repository
 	@FindBy(xpath="//div[@class='collapse navbar-collapse']//a[text()='Login']")
 	WebElement loginLink;

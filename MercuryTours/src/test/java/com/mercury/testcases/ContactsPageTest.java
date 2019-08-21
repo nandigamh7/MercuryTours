@@ -1,5 +1,6 @@
 package com.mercury.testcases;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -49,6 +50,8 @@ public class ContactsPageTest extends BaseClass{
 	@Test(priority = 2, dataProvider = "getContactTestData")
 	public void validateCreateNewContact(String fstName, String lstName, String eMail, String position){
 		contactsPage.createNewContact(fstName, lstName, eMail, position);
+		contactsPage.validateContactCreated();
+		Assert.assertTrue(contactsPage.validateContactCreated(), "Contact is not created");
 	}
 	
 	@AfterMethod

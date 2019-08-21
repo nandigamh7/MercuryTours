@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.mercury.qa.base.BaseClass;
 
@@ -14,6 +15,11 @@ public class ContactsPage extends BaseClass{
 	
 	@FindBy(xpath = "//button[@class='ui linkedin button' and contains(text(), 'New')]")
 	WebElement newContactBtn;
+	
+	@FindBy(xpath = "//div[@class= 'ui header item mb5 light-black']")
+	WebElement contactCreatedHeader;
+	
+	String contactName = null;
 	
 	public ContactsPage(){
 		PageFactory.initElements(driver, this);
@@ -32,6 +38,12 @@ public class ContactsPage extends BaseClass{
 		driver.findElement(By.xpath("//div[@class='ui input']//input[@name = 'position']")).sendKeys(position);
 		driver.findElement(By.xpath("//button[@class='ui linkedin button' and contains(text(), 'Save')]")).click();
 		
+	}
+	
+	public boolean validateContactCreated(){
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class= 'ui header item mb5 light-black']")));
+		return contactCreatedHeader.isDisplayed();
 	}
 
 }

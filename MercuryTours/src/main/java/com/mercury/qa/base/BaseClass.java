@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.mercury.qa.Util.TestUtil;
 
@@ -13,6 +14,7 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	public static WebDriverWait wait;
 	
 	public BaseClass(){
 		
@@ -43,6 +45,7 @@ public class BaseClass {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 20);
 		
 		driver.get(prop.getProperty("url"));
 	}

@@ -14,6 +14,10 @@ import com.mercury.qa.base.BaseClass;
 public class LoginPage extends BaseClass{
 	
 	//Page Factory or Object Repository
+	
+	@FindBy(xpath = "//span[text() = 'Log In']")
+	WebElement loginBtnDashboard;
+	
 	@FindBy(xpath="//div[@class='collapse navbar-collapse']//a[text()='Login']")
 	WebElement loginLink;
 	
@@ -40,7 +44,8 @@ public class LoginPage extends BaseClass{
 	public HomePage login(String un, String pwd) throws Exception{
 
 		Thread.sleep(3000);
-		loginLink.click();
+		//loginLink.click();
+		loginBtnDashboard.click();
 		username.sendKeys(un);
 		password.sendKeys(pwd);
 		loginBtn.click();

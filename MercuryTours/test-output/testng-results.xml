@@ -1,127 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="115431" started-at="2019-08-21T16:23:57Z" finished-at="2019-08-21T16:25:52Z">
+  <suite name="Default suite" duration-ms="33134" started-at="2019-08-24T09:00:39Z" finished-at="2019-08-24T09:01:13Z">
     <groups>
+      <group name="Group1">
+        <method signature="LoginPageTest.loginPageTitleTest()[pri:0, instance:com.mercury.testcases.LoginPageTest@d8eea7c7]" name="loginPageTitleTest" class="com.mercury.testcases.LoginPageTest"/>
+      </group> <!-- Group1 -->
+      <group name="Group2">
+        <method signature="LoginPageTest.loginTest()[pri:0, instance:com.mercury.testcases.LoginPageTest@d8eea7c7]" name="loginTest" class="com.mercury.testcases.LoginPageTest"/>
+      </group> <!-- Group2 -->
     </groups>
-    <test name="Default test" duration-ms="115431" started-at="2019-08-21T16:23:57Z" finished-at="2019-08-21T16:25:52Z">
-      <class name="com.mercury.testcases.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="setUp" is-config="true" duration-ms="28050" started-at="2019-08-21T21:53:57Z" finished-at="2019-08-21T21:54:25Z">
+    <test name="Default test" duration-ms="33134" started-at="2019-08-24T09:00:39Z" finished-at="2019-08-24T09:01:13Z">
+      <class name="com.mercury.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mercury.testcases.LoginPageTest@d8eea7c7]" name="setUp" is-config="true" duration-ms="10164" started-at="2019-08-24T14:30:39Z" finished-at="2019-08-24T14:30:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactsPageLabel()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="verifyContactsPageLabel" duration-ms="155" started-at="2019-08-21T21:54:25Z" finished-at="2019-08-21T21:54:25Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:0, instance:com.mercury.testcases.LoginPageTest@d8eea7c7]" name="loginPageTitleTest" duration-ms="15" started-at="2019-08-24T14:30:50Z" finished-at="2019-08-24T14:30:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyContactsPageLabel -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="tearDown" is-config="true" duration-ms="1268" started-at="2019-08-21T21:54:25Z" finished-at="2019-08-21T21:54:26Z">
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mercury.testcases.LoginPageTest@d8eea7c7]" name="tearDown" is-config="true" duration-ms="721" started-at="2019-08-24T14:30:50Z" finished-at="2019-08-24T14:30:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="setUp" is-config="true" duration-ms="25683" started-at="2019-08-21T21:54:27Z" finished-at="2019-08-21T21:54:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mercury.testcases.LoginPageTest@d8eea7c7]" name="setUp" is-config="true" duration-ms="12056" started-at="2019-08-24T14:30:50Z" finished-at="2019-08-24T14:31:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="validateCreateNewContact" duration-ms="4266" started-at="2019-08-21T21:54:53Z" data-provider="getContactTestData" finished-at="2019-08-21T21:54:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Munna]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bhai]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[munnaibhai111@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Analyst]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.mercury.testcases.LoginPageTest@d8eea7c7]" name="loginTest" duration-ms="9148" started-at="2019-08-24T14:31:02Z" finished-at="2019-08-24T14:31:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="tearDown" is-config="true" duration-ms="1588" started-at="2019-08-21T21:54:57Z" finished-at="2019-08-21T21:54:59Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mercury.testcases.LoginPageTest@d8eea7c7]" name="tearDown" is-config="true" duration-ms="1004" started-at="2019-08-24T14:31:12Z" finished-at="2019-08-24T14:31:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="setUp" is-config="true" duration-ms="22356" started-at="2019-08-21T21:54:59Z" finished-at="2019-08-21T21:55:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="validateCreateNewContact" duration-ms="3223" started-at="2019-08-21T21:55:21Z" data-provider="getContactTestData" finished-at="2019-08-21T21:55:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tom]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Cat]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[tomcat111@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Manager]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="tearDown" is-config="true" duration-ms="907" started-at="2019-08-21T21:55:25Z" finished-at="2019-08-21T21:55:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="setUp" is-config="true" duration-ms="22018" started-at="2019-08-21T21:55:25Z" finished-at="2019-08-21T21:55:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="validateCreateNewContact" duration-ms="3690" started-at="2019-08-21T21:55:47Z" data-provider="getContactTestData" finished-at="2019-08-21T21:55:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Baba]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Saigal]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[babasaigal111@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Associate]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mercury.testcases.ContactsPageTest@7d982b4]" name="tearDown" is-config="true" duration-ms="980" started-at="2019-08-21T21:55:51Z" finished-at="2019-08-21T21:55:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.mercury.testcases.ContactsPageTest -->
+      </class> <!-- com.mercury.testcases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
